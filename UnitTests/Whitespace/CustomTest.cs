@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RegexSpeedup;
 using RegexSpeedupFoitn;
 
-namespace UnitTests
+namespace UnitTests.Whitespace
 {
     [TestClass]
     public class ForRemoveWhiteSpaceTest : RemoveWhiteSpaceBaseTest
