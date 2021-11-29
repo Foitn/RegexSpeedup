@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RegexSpeedup;
+using RegexSpeedupFoitn;
 
 namespace Benchmark
 {
@@ -21,10 +22,16 @@ namespace Benchmark
             return RemoveAdditionalWhiteSpaceRegex.ReplaceWhiteSpaces(Spaces);
         }
         
-        //[Benchmark]
-        public string CustomImplementation()
+        [Benchmark]
+        public string LinqImplementation()
         {
-            throw new NotImplementedException();
+            return RemoveAdditionalWhiteSpace.ReplaceWhiteSpacesLINQ(Spaces);
+        }
+
+        [Benchmark]
+        public string ForLoopImplementation()
+        {
+            return RemoveAdditionalWhiteSpace.ReplaceWhiteSpacesLINQ(Spaces);
         }
     }
 }

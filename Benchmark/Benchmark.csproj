@@ -12,6 +12,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\RegexSpeedupFoitn\RegexSpeedupFoitn.csproj" />
+      <ProjectReference Include="..\RegexSpeedupFoitn_cpp\RegexSpeedupFoitn_cpp.vcxproj" />
       <ProjectReference Include="..\RegexSpeedup\RegexSpeedup.csproj" />
     </ItemGroup>
 
